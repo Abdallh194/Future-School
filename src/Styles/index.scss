@@ -1,0 +1,35 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+//vars
+$blue-color: #6f30f7;
+$gold-color: #fcc300;
+$main-font: "Cairo";
+
+// global classes
+* {
+  font-family: $main-font;
+}
+html,
+body {
+  direction: rtl;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.cusMargin_Padding {
+  padding: 40px 10px;
+  margin-top: 40px;
+}
+.txtDecoration_None {
+  text-decoration: none !important;
+}
+//import Assets
+@import "Assets/HomePage";
+@import "Assets/AppBar";

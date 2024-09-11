@@ -1,0 +1,151 @@
+.HomePage {
+  position: relative;
+  .GoldCard {
+    background-color: $gold-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .BlueCard {
+    background-color: $blue-color;
+    text-align: center;
+    padding-top: 90px;
+    .header {
+      color: $gold-color;
+      font-size: 6.6rem;
+      font-weight: 700;
+      margin-top: 45px;
+    }
+    .info {
+      position: relative;
+      font-size: 1.5rem;
+      color: white;
+      width: fit-content;
+      margin: 40px auto;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 130%;
+        height: 230%;
+        top: -65%;
+        left: -15%;
+        border-radius: 50%;
+        border: 6px solid $gold-color;
+      }
+    }
+    .desc {
+      font-size: 1.2rem;
+      color: white;
+      width: 84%;
+      margin: 62px auto 20px auto;
+    }
+    .NumsSec {
+      width: 77%;
+      margin: 60px auto 30px auto;
+    }
+    .num {
+      background-color: $gold-color;
+      color: $blue-color;
+      width: 100px;
+      height: 100px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      font-size: 1.9rem;
+      border-radius: 50%;
+    }
+    .name {
+      font-size: 1.6rem;
+      margin-top: 7px;
+      font-weight: 600;
+      color: $gold-color;
+    }
+    .btns {
+      width: 49%;
+      margin: 60px auto 55px auto;
+      justify-content: space-around;
+    }
+    .registerBtn,
+    .moreBtn {
+      display: block;
+      width: 240px;
+      padding: 5px;
+      text-align: center;
+      font-size: 1.7rem;
+      font-weight: 600;
+      border-radius: 31px;
+      border: 3px solid $gold-color;
+    }
+    .moreBtn {
+      color: $gold-color;
+    }
+    .registerBtn {
+      background-color: $gold-color;
+      color: $blue-color;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .BlueCard {
+      .header {
+        font-size: 5rem;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .GoldCard {
+      padding: 110px 0 30px 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .BlueCard {
+      padding-top: 0;
+      .header {
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      .info {
+        font-size: 1.2rem;
+        margin-top: 55px;
+        &::before {
+          width: 120%;
+          left: -10%;
+          height: 266%;
+          top: -82%;
+        }
+      }
+      .NumsSec {
+        width: 100%;
+        margin: 30px auto;
+      }
+      .num {
+        width: 80px;
+        height: 80px;
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      .name {
+        font-size: 1.3rem;
+      }
+      .btns,
+      .desc {
+        width: 100%;
+      }
+      .btns {
+        margin: 54px auto 45px auto;
+      }
+      .desc {
+        font-size: 1rem;
+        margin: 50px auto 20px auto;
+      }
+      .registerBtn,
+      .moreBtn {
+        width: 190px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
