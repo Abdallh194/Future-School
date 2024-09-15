@@ -1,0 +1,118 @@
+.SchoolLife {
+  background-color: $blue-color;
+  padding: 40px 0;
+  .header {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: white;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 53%;
+      height: 2px;
+      background-color: $gold-color;
+      bottom: -29%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .SchoolLifeCard {
+    margin: 40px auto;
+    width: 25%;
+    .img-fluid {
+      display: block;
+      margin: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .name,
+    .desc {
+      text-align: center;
+    }
+    .name {
+      padding: 15px 0;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: $gold-color;
+    }
+    .SchoolLifeDetails {
+      padding: 40px 15px;
+      color: white;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      .clock {
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+      .line {
+        margin: 20px auto;
+        width: 125px;
+        height: 9px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.63);
+      }
+      .desc {
+        color: black;
+        font-size: 1.15rem;
+      }
+      .more {
+        color: white;
+        text-align: center;
+        width: 130px;
+        margin: 50px auto 20px auto;
+        padding: 5px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border-radius: 5px;
+        animation-name: boxShadow;
+        animation-timing-function: linear;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        transition: all 0.5s linear;
+        // animation: boxShadow 1.2s infinite alternate;
+      }
+    }
+    .GreenCard {
+      background-color: $green-color;
+    }
+    .AquaCard {
+      background-color: $aqua-color;
+    }
+    .RedCard {
+      background-color: $red-color;
+    }
+    .GoldCard {
+      background-color: $gold-color;
+    }
+  }
+  @keyframes boxShadow {
+    0% {
+      box-shadow: 0px 0px 4px 0px rgba(97, 97, 97, 0);
+    }
+    100% {
+      box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+    }
+  }
+  @media (max-width: 992px) {
+    .SchoolLifeCard {
+      width: 50%;
+    }
+  }
+  @media (max-width: 767px) {
+    .header {
+      margin-bottom: 17px;
+      &::before {
+        bottom: -18%;
+      }
+    }
+    .SchoolLifeCard {
+      width: 85%;
+      margin: 15px auto;
+    }
+  }
+}

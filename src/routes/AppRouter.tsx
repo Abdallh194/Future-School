@@ -1,13 +1,21 @@
-import MainLayout from "@layouts/MainLayout";
+import { lazy, Suspense } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const MainLayout = lazy(() => import("@layouts/MainLayout"));
 import HomeIndex from "@pages/HomeIndex";
 import Login from "@pages/Login";
 import Register from "@pages/Register";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Loading from "@Components/Loading/Loading";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element: (
+      <Suspense fallback={<Loading />}>
+        <MainLayout />
+      </Suspense>
+    ),
     children: [
       {
         index: true,

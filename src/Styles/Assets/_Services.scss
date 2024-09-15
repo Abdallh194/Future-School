@@ -1,0 +1,82 @@
+.Services {
+  .header {
+    font-size: 1.8rem;
+    font-weight: 800;
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 53%;
+      height: 2px;
+      background-color: $gold-color;
+      bottom: -29%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .ServiceCard {
+    width: calc(25% - 30px);
+    overflow: hidden;
+    margin: 50px auto 20px auto;
+    padding: 0;
+    border-radius: 10px;
+    .img-fluid {
+      transition: 0.5s;
+    }
+    .details {
+      background-color: #eff5ff;
+
+      height: 100px;
+      padding: 30px;
+      position: relative;
+      text-align: center;
+      transition: 0.5s;
+      z-index: 1;
+      .name {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+      .dep {
+        color: $green-color;
+        padding: 5px 0;
+      }
+      .socials {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 21px;
+      }
+    }
+    &:hover {
+      .img-fluid {
+        transform: translateY(-15px);
+      }
+      .details {
+        height: 160px;
+        margin-top: -60px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .ServiceCard {
+      width: 49%;
+    }
+  }
+  @media (max-width: 767px) {
+    .header {
+      &::before {
+        bottom: -18%;
+      }
+    }
+    .row {
+      margin-top: 30px;
+    }
+    .ServiceCard {
+      width: 100%;
+      margin: 10px auto;
+    }
+  }
+}

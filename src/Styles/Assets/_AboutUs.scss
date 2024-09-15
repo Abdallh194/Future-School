@@ -1,0 +1,103 @@
+.AboutUs {
+  background: url("/about.png");
+  background-size: cover;
+  .con {
+    display: flex;
+  }
+  .head {
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-top: 15px;
+  }
+
+  .RightHead {
+    font-size: 1.688rem;
+    font-weight: 900;
+    margin-top: 13px;
+    color: $blue-color;
+  }
+  .leftHead {
+    font-size: 1.25rem;
+  }
+  .AboutCard {
+    border-radius: 8px;
+    width: calc(100% / 4 - 20px);
+    padding: 20px;
+    margin: 220px auto 50px auto;
+    text-align: center;
+    height: fit-content;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 0 10px hsla(0, 1%, 74%, 0.557);
+    }
+    .icon {
+      width: 100px;
+      padding: 22px;
+      height: 100px;
+      border-radius: 8px;
+      display: block;
+      margin: 10px auto;
+    }
+    .desc {
+      margin-top: 10px;
+    }
+    .more {
+      width: 150px;
+      margin: 30px auto 20px auto;
+      padding: 5px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+  }
+  .GoldCard {
+    background-color: $gold-color;
+    color: $blue-color;
+    .icon {
+      background-color: $blue-color;
+      color: $gold-color;
+    }
+    .desc {
+      color: #000000ab;
+    }
+    .more {
+      background-color: $blue-color;
+      color: $gold-color;
+    }
+  }
+  .BlueCard {
+    background-color: $blue-color;
+    color: $gold-color;
+    margin-top: 85px;
+    .icon {
+      background-color: $gold-color;
+      color: $blue-color;
+    }
+    .desc {
+      color: #ffffffbf;
+    }
+    .more {
+      background-color: $gold-color;
+      color: $blue-color;
+    }
+  }
+  @media (max-width: 992px) {
+    .AboutCard {
+      width: 47%;
+      margin: 150px auto -112px auto;
+    }
+    .RightHead {
+      font-size: 1.5rem;
+    }
+    .leftHead {
+      padding: 20px 10px;
+      font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .AboutCard {
+      width: 99%;
+      margin: 10px auto;
+    }
+  }
+}

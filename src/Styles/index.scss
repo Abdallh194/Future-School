@@ -6,6 +6,9 @@
 //vars
 $blue-color: #6f30f7;
 $gold-color: #fcc300;
+$green-color: #6ab78a;
+$red-color: #df764e;
+$aqua-color: #44c1e0;
 $main-font: "Cairo";
 
 // global classes
@@ -26,10 +29,37 @@ body {
 .cusMargin_Padding {
   padding: 40px 10px;
   margin-top: 40px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 }
 .txtDecoration_None {
   text-decoration: none !important;
 }
+.container {
+  max-width: 1500px !important;
+}
+.CopyRight {
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: $gold-color;
+    font-weight: 700;
+  }
+  @media (max-width: 767px) {
+    display: block;
+    text-align: center;
+    a {
+      margin-top: 10px;
+    }
+  }
+}
 //import Assets
 @import "Assets/HomePage";
 @import "Assets/AppBar";
+@import "Assets/AboutUs";
+@import "Assets/SchoolLife";
+@import "Assets/Services";
+@import "Assets/Contact";
+@import "Assets/Footer";

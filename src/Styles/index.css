@@ -21,9 +21,37 @@ body {
   padding: 40px 10px;
   margin-top: 40px;
 }
+@media (max-width: 767px) {
+  .cusMargin_Padding {
+    margin-top: 0;
+  }
+}
 
 .txtDecoration_None {
   text-decoration: none !important;
+}
+
+.container {
+  max-width: 1500px !important;
+}
+
+.CopyRight {
+  display: flex;
+  justify-content: space-between;
+}
+.CopyRight a {
+  text-decoration: none;
+  color: #fcc300;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .CopyRight {
+    display: block;
+    text-align: center;
+  }
+  .CopyRight a {
+    margin-top: 10px;
+  }
 }
 
 .HomePage {
@@ -139,8 +167,8 @@ body {
     margin-top: 55px;
   }
   .HomePage .BlueCard .info::before {
-    width: 120%;
-    left: -10%;
+    width: 115%;
+    left: -7.5%;
     height: 266%;
     top: -82%;
   }
@@ -253,6 +281,8 @@ body {
     text-align: center;
     z-index: 4;
     background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 10px;
+    border-radius: 5px;
   }
   .Navbar .navbar-collapse a {
     color: #6f30f7;
@@ -266,5 +296,418 @@ body {
   }
   .Navbar .LoginBtns a {
     margin: 10px auto;
+  }
+}
+
+.AboutUs {
+  background: url("/about.png");
+  background-size: cover;
+}
+.AboutUs .con {
+  display: flex;
+}
+.AboutUs .head {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-top: 15px;
+}
+.AboutUs .RightHead {
+  font-size: 1.688rem;
+  font-weight: 900;
+  margin-top: 13px;
+  color: #6f30f7;
+}
+.AboutUs .leftHead {
+  font-size: 1.25rem;
+}
+.AboutUs .AboutCard {
+  border-radius: 8px;
+  width: calc(25% - 20px);
+  padding: 20px;
+  margin: 220px auto 50px auto;
+  text-align: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  transition: 0.3s;
+}
+.AboutUs .AboutCard:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 10px hsla(0, 1%, 74%, 0.557);
+}
+.AboutUs .AboutCard .icon {
+  width: 100px;
+  padding: 22px;
+  height: 100px;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+}
+.AboutUs .AboutCard .desc {
+  margin-top: 10px;
+}
+.AboutUs .AboutCard .more {
+  width: 150px;
+  margin: 30px auto 20px auto;
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.AboutUs .GoldCard {
+  background-color: #fcc300;
+  color: #6f30f7;
+}
+.AboutUs .GoldCard .icon {
+  background-color: #6f30f7;
+  color: #fcc300;
+}
+.AboutUs .GoldCard .desc {
+  color: rgba(0, 0, 0, 0.6705882353);
+}
+.AboutUs .GoldCard .more {
+  background-color: #6f30f7;
+  color: #fcc300;
+}
+.AboutUs .BlueCard {
+  background-color: #6f30f7;
+  color: #fcc300;
+  margin-top: 85px;
+}
+.AboutUs .BlueCard .icon {
+  background-color: #fcc300;
+  color: #6f30f7;
+}
+.AboutUs .BlueCard .desc {
+  color: rgba(255, 255, 255, 0.7490196078);
+}
+.AboutUs .BlueCard .more {
+  background-color: #fcc300;
+  color: #6f30f7;
+}
+@media (max-width: 992px) {
+  .AboutUs .AboutCard {
+    width: 47%;
+    margin: 150px auto -112px auto;
+  }
+  .AboutUs .RightHead {
+    font-size: 1.5rem;
+  }
+  .AboutUs .leftHead {
+    padding: 20px 10px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 767px) {
+  .AboutUs .AboutCard {
+    width: 99%;
+    margin: 10px auto;
+  }
+}
+
+.SchoolLife {
+  background-color: #6f30f7;
+  padding: 40px 0;
+}
+.SchoolLife .header {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.SchoolLife .header::before {
+  position: absolute;
+  content: "";
+  width: 53%;
+  height: 2px;
+  background-color: #fcc300;
+  bottom: -29%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.SchoolLife .SchoolLifeCard {
+  margin: 40px auto;
+  width: 25%;
+}
+.SchoolLife .SchoolLifeCard .img-fluid {
+  display: block;
+  margin: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.SchoolLife .SchoolLifeCard .name,
+.SchoolLife .SchoolLifeCard .desc {
+  text-align: center;
+}
+.SchoolLife .SchoolLifeCard .name {
+  padding: 15px 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fcc300;
+}
+.SchoolLife .SchoolLifeCard .SchoolLifeDetails {
+  padding: 40px 15px;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.SchoolLife .SchoolLifeCard .SchoolLifeDetails .clock {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.SchoolLife .SchoolLifeCard .SchoolLifeDetails .line {
+  margin: 20px auto;
+  width: 125px;
+  height: 9px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+.SchoolLife .SchoolLifeCard .SchoolLifeDetails .desc {
+  color: black;
+  font-size: 1.15rem;
+}
+.SchoolLife .SchoolLifeCard .SchoolLifeDetails .more {
+  color: white;
+  text-align: center;
+  width: 130px;
+  margin: 50px auto 20px auto;
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  animation-name: boxShadow;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 0.5s linear;
+}
+.SchoolLife .SchoolLifeCard .GreenCard {
+  background-color: #6ab78a;
+}
+.SchoolLife .SchoolLifeCard .AquaCard {
+  background-color: #44c1e0;
+}
+.SchoolLife .SchoolLifeCard .RedCard {
+  background-color: #df764e;
+}
+.SchoolLife .SchoolLifeCard .GoldCard {
+  background-color: #fcc300;
+}
+@keyframes boxShadow {
+  0% {
+    box-shadow: 0px 0px 4px 0px rgba(97, 97, 97, 0);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 2px rgb(255, 255, 255);
+  }
+}
+@media (max-width: 992px) {
+  .SchoolLife .SchoolLifeCard {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .SchoolLife .header {
+    margin-bottom: 17px;
+  }
+  .SchoolLife .header::before {
+    bottom: -18%;
+  }
+  .SchoolLife .SchoolLifeCard {
+    width: 85%;
+    margin: 15px auto;
+  }
+}
+
+.Services .header {
+  font-size: 1.8rem;
+  font-weight: 800;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+.Services .header::before {
+  position: absolute;
+  content: "";
+  width: 53%;
+  height: 2px;
+  background-color: #fcc300;
+  bottom: -29%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Services .ServiceCard {
+  width: calc(25% - 30px);
+  overflow: hidden;
+  margin: 50px auto 20px auto;
+  padding: 0;
+  border-radius: 10px;
+}
+.Services .ServiceCard .img-fluid {
+  transition: 0.5s;
+}
+.Services .ServiceCard .details {
+  background-color: #eff5ff;
+  height: 100px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1;
+}
+.Services .ServiceCard .details .name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.Services .ServiceCard .details .dep {
+  color: #6ab78a;
+  padding: 5px 0;
+}
+.Services .ServiceCard .details .socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 21px;
+}
+.Services .ServiceCard:hover .img-fluid {
+  transform: translateY(-15px);
+}
+.Services .ServiceCard:hover .details {
+  height: 160px;
+  margin-top: -60px;
+}
+@media (max-width: 992px) {
+  .Services .ServiceCard {
+    width: 49%;
+  }
+}
+@media (max-width: 767px) {
+  .Services .header::before {
+    bottom: -18%;
+  }
+  .Services .row {
+    margin-top: 30px;
+  }
+  .Services .ServiceCard {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.Contact {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.Contact .ContactCard .img-fluid {
+  display: block;
+  margin: auto;
+}
+.Contact .img-card {
+  background: url("/contact.jpg");
+  background-size: cover;
+}
+.Contact .row {
+  margin-top: 50px;
+}
+.Contact .head {
+  font-size: 37px;
+}
+.Contact .info {
+  width: 68%;
+  font-size: 23px;
+  color: rgba(0, 0, 0, 0.49);
+  margin: 13px auto;
+}
+.Contact .line {
+  width: 100px;
+  height: 2px;
+  background-color: #6f30f7;
+  margin: 10px auto;
+}
+.Contact .text-feild {
+  display: flex;
+}
+.Contact .text-feild .wid-Haf {
+  width: 48%;
+}
+.Contact .form-control {
+  height: 50px;
+  margin: 10px auto;
+}
+.Contact .wid-ful {
+  width: 98%;
+}
+.Contact #msg {
+  resize: none;
+  height: 150px;
+  width: 98%;
+  margin: 20px auto;
+}
+.Contact #submit {
+  width: 98%;
+  margin: 10px auto;
+  height: 45px;
+  border: none;
+  background-color: #6f30f7;
+  color: white;
+}
+@media (max-width: 767px) {
+  .Contact .text-feild {
+    display: block;
+  }
+  .Contact .text-feild .wid-Haf {
+    width: 98%;
+  }
+  .Contact .head {
+    font-size: 34px;
+  }
+  .Contact .info {
+    width: 90%;
+    font-size: 19px;
+  }
+  .Contact .line {
+    width: 174px;
+  }
+}
+
+footer {
+  background-color: #6f30f7;
+  color: white;
+}
+footer .logo {
+  color: #fcc300;
+  display: flex;
+  align-items: center;
+  color: #fcc300;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+footer .logo .page-name {
+  margin-right: 10px;
+}
+footer .info {
+  font-size: 1.3rem;
+  padding: 16px 0;
+}
+footer .details {
+  font-size: 1.25rem;
+  margin-bottom: 17px;
+}
+footer .details span {
+  margin-right: 5px;
+}
+@media (max-width: 992px) {
+  footer .info {
+    font-size: 1.1rem;
+  }
+  footer .DetailsCard {
+    margin-top: 40px;
+  }
+  footer .details {
+    font-size: 1.1rem;
   }
 }/*# sourceMappingURL=index.css.map */
