@@ -9,7 +9,7 @@ import { LuSchool } from "react-icons/lu";
 import CopyRight from "@Components/Sections/CopyRight";
 const Footer = () => {
   return (
-    <footer className="cusMargin_Padding">
+    <footer className="">
       <Container>
         <Row>
           <Col md={12} lg={6}>

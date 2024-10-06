@@ -1,0 +1,73 @@
+.Login {
+  background: url("/login.jpg");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-position-x: 50%;
+  .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    font-size: 52px;
+    font-weight: 700;
+    color: #ededed;
+  }
+  .subHeader {
+    font-size: 27px;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    color: #ededed;
+  }
+  .info {
+    color: #b3b3b3;
+    font-size: 17px;
+    margin-top: 19px;
+  }
+  form {
+    margin-top: 40px;
+  }
+  .Lable {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ededed;
+  }
+  .form-control {
+    height: 50px;
+  }
+  #submit {
+    display: block;
+    width: 150px;
+    color: white;
+  }
+  .registerBtn {
+    text-decoration: underline !important;
+    color: #ededed;
+    display: block;
+    margin-top: 18px;
+  }
+  .formCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (max-width: 992px) {
+    height: 140vh;
+    .header {
+      font-size: 46px;
+    }
+    .lottieCard {
+      margin-top: 50px;
+    }
+  }
+}

@@ -60,7 +60,9 @@ const HomePage = () => {
                 <Link to="/register" className="registerBtn txtDecoration_None">
                   تسجيل
                 </Link>
-                <div className="moreBtn">قراءة المزيد</div>
+                <a href="#AboutUs" className="moreBtn txtDecoration_None">
+                  قراءة المزيد
+                </a>
               </div>
             </Col>
           </Row>

@@ -23,6 +23,7 @@
       "@Redux/*": ["src/Redux/*"],
       "@Styles/*": ["src/Styles/*"],
       "@routes/*": ["src/routes/*"],
+      "@Validation/*": ["src/Validation/*"],
       "@public/*": ["public/*"]
     },
     /* Linting */

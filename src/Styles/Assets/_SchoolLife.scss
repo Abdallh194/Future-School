@@ -60,6 +60,8 @@
       }
       .more {
         color: white;
+        user-select: none;
+        cursor: pointer;
         text-align: center;
         width: 130px;
         margin: 50px auto 20px auto;

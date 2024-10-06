@@ -1,7 +1,11 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useAppSelector } from "@Redux/hooks";
+
 function AppBar() {
+  //selector
+  const { isloggin, NewUser } = useAppSelector((s) => s.user);
   return (
     <Navbar collapseOnSelect expand="lg" className="Navbar">
       <Container style={{ maxWidth: "1550px" }}>
@@ -31,14 +35,25 @@ function AppBar() {
             <Nav.Link href="#Services">خدماتنا</Nav.Link>
             <Nav.Link href="/#ContactUs">تواصل معنا</Nav.Link>
           </Nav>
-          <Nav className="LoginBtns">
-            <Link className="loginBtn txtDecoration_None" to="/login">
-              دخول
-            </Link>
-            <Link className="registerBtn txtDecoration_None" to="/register">
-              تسجيل
-            </Link>
-          </Nav>
+          {isloggin ? (
+            <Nav className="LoginBtns">
+              <Link
+                className="loginBtn txtDecoration_None UserName"
+                to="/userprofile"
+              >
+                {NewUser.FullName}
+              </Link>
+            </Nav>
+          ) : (
+            <Nav className="LoginBtns">
+              <Link className="loginBtn txtDecoration_None" to="/login">
+                دخول
+              </Link>
+              <Link className="registerBtn txtDecoration_None" to="/register">
+                تسجيل
+              </Link>
+            </Nav>
+          )}
         </Navbar.Collapse>
       </Container>
     </Navbar>

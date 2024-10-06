@@ -29,9 +29,9 @@ const Services = () => {
                   <div className="name">{e.name}</div>
                   <div className="dep">{e.dep}</div>
                   <div className="socials">
-                    <FaFacebook className="mx-2" />
-                    <RiInstagramFill className="mx-2" />
-                    <FaTwitter className="mx-2" />
+                    <FaFacebook className="mx-2 icon" />
+                    <RiInstagramFill className="mx-2 icon" />
+                    <FaTwitter className="mx-2 icon" />
                   </div>
                 </div>
               </motion.div>
