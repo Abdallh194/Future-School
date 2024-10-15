@@ -23,7 +23,7 @@ type TUserType = {
     Email: string;
     Password: string;
     age: number;
-    Nid: number;
+    NiD: number;
     Address: string;
     Gender: string;
     Annual_Expenses: boolean;
@@ -81,7 +81,7 @@ const RighSideBar = ({
                   </div>
                   <div className="col">
                     <div className="head">الرقم القومي</div>
-                    <div className="info">{NewUser.Nid}</div>
+                    <div className="info">{NewUser.NiD}</div>
                   </div>
                   <div className="col">
                     <div className="head"> السن</div>

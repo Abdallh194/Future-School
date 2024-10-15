@@ -7,7 +7,7 @@ export interface IProductsState {
     Email: string;
     Password: string;
     age: number;
-    Nid: number;
+    NiD: number;
     Address: string;
     Gender: string;
     Annual_Expenses: boolean;
@@ -24,7 +24,7 @@ const initialState: IProductsState = {
     Email: "Ahmeddel400@gmail.com",
     Password: "87654321@",
     age: 17,
-    Nid: 30002011232156,
+    NiD: 30002011232156,
     Address: "طنطا , قطور , العتوه البحريه",
     Gender: "ذكر",
     Annual_Expenses: false,

@@ -173,7 +173,7 @@ const Register = () => {
                         <Form.Group className="mb-3 widHaf">
                           <Form.Label>رقم هاتف ولي الامر</Form.Label>
                           <Form.Control
-                            type="text"
+                            type="number"
                             {...register("Phone")}
                             isInvalid={!!errors.Phone?.message}
                           />

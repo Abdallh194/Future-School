@@ -129,7 +129,7 @@ const Login = () => {
                         تسجيل دخول
                       </Button>
                       <Link to="/Register" className="registerBtn">
-                        هل لديك حساب بالفعل؟ قم بتسجيل الدخول الآن
+                        ليس لديك حساب ؟ سجل لدينا الأن
                       </Link>
                     </Form>
                     {isLoginError && (
