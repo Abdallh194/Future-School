@@ -213,7 +213,7 @@ const Register = () => {
                         </Form.Group>
                       </div>
                       <Button variant="primary" type="submit" id="submit">
-                        Submit
+                        تسجيل
                       </Button>
                       <Link to="/Login" className="LoginBtn">
                         هل لديك حساب بالفعل؟ قم بتسجيل الدخول الآن

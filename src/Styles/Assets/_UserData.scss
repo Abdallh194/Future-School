@@ -64,7 +64,16 @@
       font-weight: 500;
     }
   }
-
+  .card-content {
+    background-color: transparent !important;
+    border: none;
+    padding: 0;
+    .input {
+      border-radius: 4px;
+      height: 55px;
+      background-color: white;
+    }
+  }
   .under_construction {
     margin-top: 120px;
     color: red;

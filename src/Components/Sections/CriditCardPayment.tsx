@@ -128,10 +128,10 @@ const CrditCardForm = ({ Annual_Expenses }: TUserType) => {
                 className="BookBtn"
                 onClick={() => {
                   if (
-                    cardholder.length > 0 &&
-                    cvv.length > 0 &&
-                    Expirydate.length > 0 &&
-                    cardNumber.length > 0
+                    cardholder.length > 3 &&
+                    cvv.length > 2 &&
+                    Expirydate.length > 2 &&
+                    cardNumber.length > 10
                   ) {
                     setisDisabled(true);
                     setlogginProccessSuccess(false);

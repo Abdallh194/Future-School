@@ -64,6 +64,9 @@
 
   @media (max-width: 992px) {
     height: 140vh;
+    .row {
+      flex-direction: column-reverse;
+    }
     .header {
       font-size: 46px;
     }
