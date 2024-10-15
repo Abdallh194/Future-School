@@ -1,9 +1,11 @@
 import AppBar from "@Components/Common/AppBar";
-import Lottie from "lottie-react";
+
 import { Col, Container, Row } from "react-bootstrap";
 
 //lottiefiles
 import learning from "@assets/LottieFiles/learning.json";
+import Lottie from "lottie-react";
+
 import { Link } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 const HomePage = () => {

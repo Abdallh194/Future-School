@@ -18,6 +18,7 @@ $main-font: "Cairo";
 html,
 body {
   direction: rtl;
+  overflow-x: hidden !important;
 }
 .overlay {
   position: absolute;
@@ -65,3 +66,7 @@ body {
 @import "Assets/Footer";
 @import "Assets/Login";
 @import "Assets/Register";
+@import "Assets/UserProfile";
+@import "Assets/SideBar";
+@import "Assets/UserData";
+@import "Assets/PaymentForm";

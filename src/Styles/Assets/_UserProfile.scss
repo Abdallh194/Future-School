@@ -1,0 +1,7 @@
+.UserProfile {
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -61,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
   }
+
   @media (max-width: 992px) {
     height: 140vh;
     .header {
@@ -68,6 +69,11 @@
     }
     .lottieCard {
       margin-top: 50px;
+    }
+    .loginError {
+      top: auto !important;
+      bottom: 33% !important;
+      width: 94% !important;
     }
   }
 }

@@ -1,0 +1,25 @@
+.successPay {
+  width: fit-content;
+  margin: 40px auto;
+  color: green;
+  .icon {
+    max-width: 250px;
+  }
+}
+.card-content {
+  background-color: transparent !important;
+  border: none;
+  padding: 0;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  .input {
+    border-radius: 4px;
+    height: 55px;
+    background-color: white;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}

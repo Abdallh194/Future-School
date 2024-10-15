@@ -10,6 +10,7 @@ export interface IProductsState {
     Nid: number;
     Address: string;
     Gender: string;
+    Annual_Expenses: boolean;
   };
   exsitEmail: boolean;
   DefaultUserEmail: string;
@@ -23,9 +24,10 @@ const initialState: IProductsState = {
     Email: "Ahmeddel400@gmail.com",
     Password: "87654321@",
     age: 17,
-    Nid: 2010101010,
+    Nid: 30002011232156,
     Address: "طنطا , قطور , العتوه البحريه",
     Gender: "ذكر",
+    Annual_Expenses: false,
   },
   DefaultUserEmail: "abdallhsabry194@gmail.com",
   DefaultUserPassword: "12345678",
@@ -51,10 +53,17 @@ const loginSlice = createSlice({
     ToggleLoginState: (state) => {
       state.isloggin = !state.isloggin;
     },
+    ActiveAnnual_Expenses: (state) => {
+      state.NewUser.Annual_Expenses = true;
+    },
   },
 });
 
-export const { AddNewUser, ValidateEmailAddress, ToggleLoginState } =
-  loginSlice.actions;
+export const {
+  AddNewUser,
+  ValidateEmailAddress,
+  ToggleLoginState,
+  ActiveAnnual_Expenses,
+} = loginSlice.actions;
 
 export default loginSlice.reducer;

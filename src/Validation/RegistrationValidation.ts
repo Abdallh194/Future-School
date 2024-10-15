@@ -4,7 +4,7 @@ const RegisterSchema = z
   .object({
     FullName: z.string().min(5, { message: "عفوا الإسم بالكامل مطلوب " }),
     age: z.string().min(1, { message: "عفوا السن مطلوب " }),
-    Phone: z.string().min(6, { message: "عفوا رقم الهاتف مطلوب مطلوب " }),
+    Phone: z.string().min(6, { message: "عفوا رقم الهاتف مطلوب  " }),
     Address: z.string().min(6, { message: "عفوا العنوان مطلوب " }),
     NiD: z.string().min(10, { message: "عفوا الرقم القومي للطفل مطلوب " }),
     Gender: z.string().min(3, { message: "عفوا النوع مطلوب مطلوب " }),
